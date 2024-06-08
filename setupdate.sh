@@ -15,7 +15,7 @@ apt-get install make -y
 apt-get install g++ -y
 apt-get install nano -y
 
-
+chmod +x add-file
 chmod +x edit
 chmod +x run
 chmod +x update
@@ -31,7 +31,7 @@ apt-get install figlet -y
 apt-get install python3-progress -y
 apt-get install python3-requests -y
 
-
+mv add-file ../../bin
 mv src-miner ../../etc
 mv edit ../../bin
 mv run ../../bin
