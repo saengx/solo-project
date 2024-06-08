@@ -18,7 +18,7 @@ apt-get install nano -y
 
 chmod +x edit
 chmod +x run
-chmod +x update-miner
+chmod +x update
 chmod +x ANSI_Shadow.flf
 chmod +x backup
 chmod +x restore
