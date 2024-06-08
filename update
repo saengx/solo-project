@@ -1,0 +1,17 @@
+#!/bin/bash 
+  
+cd
+rm -rf solo-project
+git clone https://github.com/saengx/solo-project 
+cd ../etc/src-miner/set-miner
+cp -r online.json /../root/solo-project/src-miner/set-miner
+cd
+cd ../etc
+rm -rfsrc-miner 
+cd
+cd ../bin
+rm -rf add-file edit run restore backup
+cd
+cd solo-project 
+chmod +x setupdate.sh
+sh setupdate.sh
