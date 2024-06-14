@@ -50,6 +50,8 @@ def runOffline():
         
 
         print("\033[1;32;40m")
+        print("USER =",user)
+        print("file =",file)
         print("POOL   =",pool)
         print("ALGO   =",algo)
         print("WALLET =",wallet)
