@@ -7,7 +7,7 @@ cd ../etc/src-miner/set-miner
 cp -r online.json /../root/solo-project/src-miner/set-miner
 cd
 cd ../etc
-rm -rfsrc-miner 
+rm -rf src-miner 
 cd
 cd ../bin
 rm -rf add-file edit run restore backup
