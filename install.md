@@ -1,1 +1,1 @@
-https://github.com/saengx/solo-project
+git clone https://github.com/saengx/solo-project && cd solo-project && chmod +x setupdate.sh setup.sh && ./setup.sh
