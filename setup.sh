@@ -1,7 +1,6 @@
 #!/bin/sh
 
 apt-get update -y
-apt-get upgrade -y
 apt-get install autoconf -y
 apt-get install pkg-config -y
 apt-get install libcurl4-openssl-dev -y
