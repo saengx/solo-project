@@ -3,6 +3,6 @@
 cd
 cd /data/data/com.termux/files 
 tar cvfz solo-project.tar.gz home usr
-cp -r solo-project.tar.gz/storage/emulated/0/download
+cp -r solo-project.tar.gz /storage/emulated/0/download
 rm -rf solo-project.tar.gz
 proot-distro login ubuntu
