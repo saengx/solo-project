@@ -42,16 +42,17 @@ def runOffline():
             algo = loads['algo']
             wallet = loads['wallet']
             password = loads['pass']
-            name = loads['name']
             cpu = loads['cpu']
         if pool == "" or wallet == "":
             print("\n\n\033[1;31;40mไม่พบการตั้งค่า หรือ การตั้งค่าไม่ถูกต้อง\nกรุณาตั้งค่าใหม่โดยใช้คำสั่ง edit\033[0m\n\n")
         if password == "":
            password = "x"
-        if name == "":
-           name = "noname"
         if cpu == "":
            cpu = "1"
+        with open("set-miner/name.json", encoding="utf-8") as set:
+            load = set.read()
+            loads = json.loads(load)
+            name = loads['name']
         
 
         print("\033[93mCONNECT USER\033[00m\n")
@@ -72,7 +73,9 @@ def runOffline():
         push = {'pool': '','algo': '','wallet': '','pass': '','name': '','cpu': ''}
         with open("set-miner/online.json", "w") as set:
             json.dump(push, set, indent=4)
-        
+        push = {'name': ''}
+        with open("set-miner/name.json", "w") as set:
+            json.dump(push, set, indent=4) 
         
         
         os.system("@cls||clear")
