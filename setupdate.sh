@@ -44,9 +44,9 @@ run
 
 
 cd && cd ../etc/src-miner/miner
-chmod +x build-linux-arm.sh
+chmod +x build-android.sh
 chmod +x autogen.sh
-./build.sh
+./build-android.sh
 
 chmod +x miner
 
