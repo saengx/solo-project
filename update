@@ -5,6 +5,7 @@ rm -rf solo-project
 git clone https://github.com/saengx/solo-project 
 cd ../etc/src-miner/set-miner
 cp -r online.json /../root/solo-project/src-miner/set-miner
+cp -r name.json /../root/solo-project/src-miner/set-miner
 cd
 cd ../etc
 rm -rf src-miner 
