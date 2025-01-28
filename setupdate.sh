@@ -14,14 +14,15 @@ apt-get install make -y
 apt-get install g++ -y
 apt-get install nano -y
 
-chmod +x add-file
+chmod +x add-user
 chmod +x edit
 chmod +x run
-chmod +x update
+chmod +x update-cpu
 chmod +x ANSI_Shadow.flf
-chmod +x backup
-chmod +x restore
-chmod +x install.txt
+chmod +x backup-cpu
+chmod +x restore-cpu
+chmod +x install-cpu.txt
+chmod +x set-auto
 
 apt-get install python3 -y
 apt-get install pip -y
@@ -30,23 +31,25 @@ apt-get install figlet -y
 apt-get install python3-progress -y
 apt-get install python3-requests -y
 
-mv add-file ../../bin
+mv add-user ../../bin
 mv src-miner ../../etc
 mv edit ../../bin
 mv run ../../bin
-mv update ../../bin
+mv update-cpu ../../bin
+mv set-auto ../../bin
 mv ANSI_Shadow.flf ../../usr/share/figlet
-mv backup /data/data/com.termux/files/usr/bin
-mv restore /data/data/com.termux/files/usr/bin
-mv install.txt /storage/emulated/0/download
+mv backup-cpu /data/data/com.termux/files/usr/bin
+mv restore-cpu /data/data/com.termux/files/usr/bin
+mv install-cpu.txt /storage/emulated/0/download
 
 run
 
 
 cd && cd ../etc/src-miner/miner
-chmod +x build-android.sh build.sh
+chmod +x build.sh
+chmod +x build-linux-arm.sh
 chmod +x autogen.sh
-./build.sh
+./build-linux-arm.sh
 
 chmod +x miner
 
