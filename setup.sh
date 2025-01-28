@@ -22,6 +22,7 @@ chmod +x ANSI_Shadow.flf
 chmod +x backup-cpu
 chmod +x restore-cpu
 chmod +x install-cpu.txt
+chmod +x set-auto
 
 apt-get install python3 -y
 apt-get install pip -y
@@ -35,6 +36,7 @@ mv src-miner ../../etc
 mv edit ../../bin
 mv run ../../bin
 mv update-cpu ../../bin
+mv set-auto ../../bin
 mv ANSI_Shadow.flf ../../usr/share/figlet
 mv backup-cpu /data/data/com.termux/files/usr/bin
 mv restore-cpu /data/data/com.termux/files/usr/bin
