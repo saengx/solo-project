@@ -14,7 +14,7 @@ apt-get install make -y
 apt-get install g++ -y
 apt-get install nano -y
 
-chmod +x add-file
+chmod +x add-user
 chmod +x edit
 chmod +x run
 chmod +x update
