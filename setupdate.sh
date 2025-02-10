@@ -51,6 +51,4 @@ chmod +x build-linux-arm.sh
 chmod +x autogen.sh
 ./build-linux-arm.sh
 
-chmod +x miner
-
 run
