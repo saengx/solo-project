@@ -27,7 +27,7 @@ except ImportError:
     pip.main(['install', '--user', 'requests'])
     import requests
 
-zergpool = ["c=KAX"]
+zergpool = ["stratum+tcp://mike.asia.mine.zergpool.com:3734","stratum+tcp://mike.asia.mine.zergpool.com:3730"]
     
 def runOffline():
     banner()
