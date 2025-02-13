@@ -72,7 +72,7 @@ def runOffline():
            print("\033[00m\n")
 
            #time.sleep(2)
-           os.system(f"cd ccminer && ./cpuminer -a {algo} -o {pool} -u {wallet}.{name} -p {password},ID={name} -t {cpu}")
+           os.system(f"cd miner && ./cpuminer -a {algo} -o {pool} -u {wallet}.{name} -p {password},ID={name} -t {cpu}")
 
         else:
          print("PASS   =",password)
