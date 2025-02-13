@@ -64,9 +64,18 @@ def runOffline():
         print("POOL   =",pool)
         print("ALGO   =",algo)
         print("WALLET =",wallet)
-        print("PASS   =",password)
         print("NAME   =",name)
         print("CPU    =",cpu)
+        if pool in zergpool:
+
+           print("PASS   =",password +",id="+name)
+           print("\033[00m\n")
+
+           #time.sleep(2)
+           os.system(f"cd ccminer && ./cpuminer -a {algo} -o {pool} -u {wallet}.{name} -p {password},ID={name} -t {cpu}")
+
+        else:
+        print("PASS   =",password)
         print("\033[00m\n")
 
         # time.sleep(2)
