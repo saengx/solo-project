@@ -27,7 +27,7 @@ except ImportError:
     pip.main(['install', '--user', 'requests'])
     import requests
 
-zergpool = ["stratum+tcp://verushash.mine.zergpool.com:3300","stratum+tcp://verushash.na.mine.zergpool.com:3300","stratum+tcp://verushash.eu.mine.zergpool.com:3300","stratum+tcp://verushash.asia.mine.zergpool.com:3300"]
+zergpool = ["c=KAX"]
     
 def runOffline():
     banner()
